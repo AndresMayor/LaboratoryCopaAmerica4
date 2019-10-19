@@ -36,6 +36,17 @@ class testViewer {
 		
 	}
 	
+	@Test
+	public void testAddViewer() {
+		setupEscenario();
+		Viewer v1 = new Viewer("0203", "richi", "pacho", "nn@nn.co", "female", "Colombia", "Photo", "20/02/2019");
+		Viewer v2 = new Viewer("9920", "richi", "pacho", "nn@nn.co", "female", "Colombia", "Photo", "20/02/2019");
+		viewer.addViewer(v1);
+		viewer.addViewer(v2);
+		assertTrue(viewer.getIzq().compareTo(v1) == 0);
+		assertTrue(viewer.getDer().compareTo(v2) == 0);
+	}
+	
 	
 	
 	
