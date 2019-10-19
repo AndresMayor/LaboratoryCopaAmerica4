@@ -24,7 +24,7 @@ class testEvent {
 	}
 	
 	@Test
-	public void testSeacrhCompetitor(){
+	public void testSeacrhViewerId(){
 		setupEscenario();
 		//String id, String first_name, String last_name, String email, String gender, String country,String photo, String birthday
 		Viewer c  = new Viewer("1234","andres","mayor","andresmayor03@gmail.com","Male","Colombia","hppt/:facebook.com","20/02/2001");
